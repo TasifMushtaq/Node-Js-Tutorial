@@ -1,0 +1,24 @@
+{
+  "name": "folder",
+  "version": "1.0.0",
+  "description": "coding",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Node JS/practice_1.js -e js,hbs"
+
+  },
+  "author": "tasif",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mangodb": "^1.0.0",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

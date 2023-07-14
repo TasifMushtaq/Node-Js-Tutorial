@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time machine</title>
+</head>
+<body>
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a=new Date();
+            date=a.toLocaleDateString(undefined,options);
+            time=a.getHours() +':'+ a.getMinutes() +':'+a.getSeconds() ;
+            document.getElementById('time').innerHTML=time+'<br>on'+date;   
+            // console.log(time,date);
+        }, 1000);
+
+    </script>
+    <div class="container">
+      <h1>Time is here </h1>
+      <p>The time of the day  we show that:</p>
+      <h1 id="time"></h1>
+
+    </div>
+</body>
+</html>
